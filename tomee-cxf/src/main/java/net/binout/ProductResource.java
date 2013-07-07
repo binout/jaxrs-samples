@@ -1,11 +1,11 @@
-import javax.ejb.Stateless;
+package net.binout;
+
 import javax.inject.Inject;
 import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
 @Path("/product")
-@Stateless
 public class ProductResource {
 
     @Inject

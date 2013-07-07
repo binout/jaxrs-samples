@@ -1,3 +1,5 @@
+package net.binout;
+
 import javax.enterprise.context.ApplicationScoped;
 import java.util.*;
 

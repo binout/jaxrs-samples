@@ -1,6 +1,9 @@
+package net.binout;
+
 import javax.xml.bind.annotation.XmlRootElement;
 
-@XmlRootElement
+// Use jettison as JSON marshaller
+@XmlRootElement(name="product", namespace = "")
 public class Product {
 
     private String name;

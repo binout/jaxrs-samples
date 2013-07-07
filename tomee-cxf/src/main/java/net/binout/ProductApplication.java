@@ -1,3 +1,5 @@
+package net.binout;
+
 import javax.ws.rs.ApplicationPath;
 
 @ApplicationPath("/")

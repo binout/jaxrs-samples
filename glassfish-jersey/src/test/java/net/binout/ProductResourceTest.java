@@ -1,4 +1,10 @@
+package net.binout;
+
 import com.github.kevinsawicki.http.HttpRequest;
+import net.binout.Product;
+import net.binout.ProductApplication;
+import net.binout.ProductRepository;
+import net.binout.ProductResource;
 import org.jboss.arquillian.container.test.api.Deployment;
 import org.jboss.arquillian.container.test.api.RunAsClient;
 import org.jboss.arquillian.junit.Arquillian;
