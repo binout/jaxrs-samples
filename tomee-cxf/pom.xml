@@ -11,17 +11,21 @@
     </parent>
     <artifactId>tomee-cxf</artifactId>
 
+    <properties>
+        <version.tomee>1.5.2</version.tomee>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.apache.openejb</groupId>
             <artifactId>tomee-jaxrs</artifactId>
-            <version>1.5.2</version>
+            <version>${version.tomee}</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
             <groupId>org.apache.openejb</groupId>
             <artifactId>arquillian-tomee-embedded</artifactId>
-            <version>1.5.2</version>
+            <version>${version.tomee}</version>
             <scope>test</scope>
         </dependency>
     </dependencies>

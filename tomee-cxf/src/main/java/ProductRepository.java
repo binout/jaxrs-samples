@@ -18,8 +18,4 @@ public class ProductRepository {
         return products.get(name);
     }
 
-    public void clear() {
-        products.clear();
-    }
-
 }
