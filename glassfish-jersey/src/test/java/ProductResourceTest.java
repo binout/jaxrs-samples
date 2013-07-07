@@ -11,6 +11,7 @@ import org.junit.runner.RunWith;
 
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
+import java.io.File;
 import java.net.URL;
 
 import static org.junit.Assert.assertEquals;
@@ -23,7 +24,8 @@ public class ProductResourceTest {
     public static WebArchive createDeployment() {
         return ShrinkWrap.create(WebArchive.class)
                 .addClasses(Product.class, ProductApplication.class, ProductRepository.class, ProductResource.class)
-                .addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml");
+                .addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml")
+                .setWebXML(new File("glassfish-jersey/src/main/webapp/WEB-INF/web.xml"));
     }
 
     @ArquillianResource
@@ -35,7 +37,7 @@ public class ProductResourceTest {
         int getCode = HttpRequest.get(new URL(baseUrl, "product/toto")).code();
         assertEquals(Response.Status.NO_CONTENT.getStatusCode(), getCode);
 
-        String json = "{\"product\":{\"name\":\"toto\"}}";
+        String json = "{\"name\":\"toto\"}";
         int postCode = HttpRequest.post(new URL(baseUrl, "product")).contentType(MediaType.APPLICATION_JSON).send(json.getBytes()).code();
         assertEquals(Response.Status.CREATED.getStatusCode(), postCode);
 
