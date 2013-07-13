@@ -31,7 +31,15 @@ public class ProductResourceTest {
         return ShrinkWrap.create(WebArchive.class)
                 .addClasses(Product.class, ProductApplication.class, ProductRepository.class, ProductResource.class)
                 .addAsWebInfResource(EmptyAsset.INSTANCE, "beans.xml")
-                .setWebXML(new File("glassfish-jersey/src/main/webapp/WEB-INF/web.xml"));
+                .setWebXML(webXML());
+    }
+
+    private static File webXML() {
+        File file = new File("glassfish-jersey/src/main/webapp/WEB-INF/web.xml");
+        if (!file.exists()) {
+            file = new File("src/main/webapp/WEB-INF/web.xml");
+        }
+        return file;
     }
 
     @ArquillianResource
