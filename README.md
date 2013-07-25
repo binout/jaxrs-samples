@@ -19,6 +19,68 @@ It's very simple :
  
 I use Arquillian to implement this use case as an integration test.
 
+### Summary
+<table>
+<tr>
+    <th></th>
+    <th>glassfish-jersey</th>
+    <th>jersey</th>
+    <th>tomee-cxf</th>
+    <th>resteasy</th>
+    <th>restlet</th>
+</tr>
+<tr>
+    <th>version</th>
+    <td>glassfish 3.1.2</td>
+    <td></td>
+    <td>tomee 1.5.2</td>
+    <td>3.0.2.Final</td>
+    <td>2.2-M3</td>
+</tr>
+<tr>
+    <th>documentation</th>
+    <td>[Jersey User Guide](https://jersey.java.net/documentation/latest/index.html)</td>
+    <td>[Jersey User Guide](https://jersey.java.net/documentation/latest/index.html)</td>
+    <td>[CXF User Guide](http://cxf.apache.org/docs/index.html)</td>
+    <td>[RestEasy User Guide](http://docs.jboss.org/resteasy/docs/3.0.2.Final/userguide/html_single/index.html)</td>
+    <td>[Restlet User Guide](http://restlet.org/learn/guide/2.1/)</td>
+</tr>
+<tr>
+    <th>packaging</th>
+    <td>war</td>
+    <td>jar</td>
+    <td>war</td>
+    <td>jar</td>
+    <td>jar</td>
+</tr>
+<tr>
+    <th>server</th>
+    <td>glassfish</td>
+    <td>com.sun.net.httpserver.HttpServer</td>
+    <td>tomee</td>
+    <td>com.sun.net.httpserver.HttpServer</td>
+    <td>org.restlet.Component</td>
+</tr>
+<tr>
+    <th>test</th>
+    <td>with arquillian, but long</td>
+    <td>fast</td>
+    <td>with arquillian, but long</td>
+    <td>fast</td>
+    <td>fast</td>
+</tr>
+<tr>
+    <th>dependency injection</th>
+    <td>weld</td>
+    <td>guice</td>
+    <td>OpenWebBeans</td>
+    <td>no, possible partial guice integration</td>
+    <td>no, possible partial guice integration</td>
+</tr>
+
+</table>
+
+
 ### More detailed...
 For an advanced study, you can read the following article by OCTO (in french) :
 
