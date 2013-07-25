@@ -10,6 +10,7 @@
     <modules>
         <module>tomee-cxf</module>
         <module>glassfish-jersey</module>
+        <module>restlet</module>
     </modules>
     <packaging>pom</packaging>
 
