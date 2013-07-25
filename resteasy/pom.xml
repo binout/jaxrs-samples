@@ -12,19 +12,19 @@
     <artifactId>resteasy</artifactId>
 
     <properties>
-        <resteasy-version>3.0.2.Final</resteasy-version>
+        <version.resteasy>3.0.2.Final</version.resteasy>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.jboss.resteasy</groupId>
             <artifactId>resteasy-jdk-http</artifactId>
-            <version>${resteasy-version}</version>
+            <version>${version.resteasy}</version>
         </dependency>
         <dependency>
             <groupId>org.jboss.resteasy</groupId>
             <artifactId>resteasy-jackson2-provider</artifactId>
-            <version>${resteasy-version}</version>
+            <version>${version.resteasy}</version>
         </dependency>
     </dependencies>
 </project>

@@ -9,7 +9,9 @@
         <groupId>jaxrs-samples</groupId>
         <version>1.0</version>
     </parent>
+
     <artifactId>tomee-cxf</artifactId>
+    <packaging>war</packaging>
 
     <properties>
         <version.tomee>1.5.2</version.tomee>
@@ -29,5 +31,18 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-war-plugin</artifactId>
+                <version>${version.maven.war.plugin}</version>
+                <configuration>
+                    <failOnMissingWebXml>false</failOnMissingWebXml>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

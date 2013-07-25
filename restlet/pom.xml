@@ -12,24 +12,24 @@
     <artifactId>restlet</artifactId>
 
     <properties>
-        <restlet.version>2.2-M3</restlet.version>
+        <version.restlet>2.2-M3</version.restlet>
     </properties>
 
     <dependencies>
         <dependency>
             <groupId>org.restlet.jee</groupId>
             <artifactId>org.restlet</artifactId>
-            <version>${restlet.version}</version>
+            <version>${version.restlet}</version>
         </dependency>
         <dependency>
             <groupId>org.restlet.jee</groupId>
             <artifactId>org.restlet.ext.jaxrs</artifactId>
-            <version>${restlet.version}</version>
+            <version>${version.restlet}</version>
         </dependency>
         <dependency>
             <groupId>org.restlet.jee</groupId>
             <artifactId>org.restlet.ext.jackson</artifactId>
-            <version>${restlet.version}</version>
+            <version>${version.restlet}</version>
         </dependency>
     </dependencies>
 
