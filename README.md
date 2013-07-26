@@ -56,9 +56,9 @@ I use Arquillian to implement this use case as an integration test.
 <tr>
     <th>server</th>
     <td>glassfish</td>
-    <td>com.sun.net.httpserver.HttpServer</td>
+    <td>HttpServer</td>
     <td>tomee</td>
-    <td>com.sun.net.httpserver.HttpServer</td>
+    <td>HttpServer</td>
     <td>org.restlet.Component</td>
 </tr>
 <tr>
