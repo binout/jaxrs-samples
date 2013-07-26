@@ -39,11 +39,11 @@ I use Arquillian to implement this use case as an integration test.
 </tr>
 <tr>
     <th>documentation</th>
-    <td>[Jersey User Guide](https://jersey.java.net/documentation/latest/index.html)</td>
-    <td>[Jersey User Guide](https://jersey.java.net/documentation/latest/index.html)</td>
-    <td>[CXF User Guide](http://cxf.apache.org/docs/index.html)</td>
-    <td>[RestEasy User Guide](http://docs.jboss.org/resteasy/docs/3.0.2.Final/userguide/html_single/index.html)</td>
-    <td>[Restlet User Guide](http://restlet.org/learn/guide/2.1/)</td>
+    <td><a href="https://jersey.java.net/documentation/latest/index.html">Jersey User Guide</a></td>
+    <td><a href="https://jersey.java.net/documentation/latest/index.html">Jersey User Guide</a></td>
+    <td><a href="http://cxf.apache.org/docs/index.html">CXF User Guide</a></td>
+    <td><a href="http://docs.jboss.org/resteasy/docs/3.0.2.Final/userguide/html_single/index.html">RestEasy User Guide</a></td>
+    <td><a href="http://restlet.org/learn/guide/2.1/">Restlet User Guide</a></td>
 </tr>
 <tr>
     <th>packaging</th>
