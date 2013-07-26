@@ -12,6 +12,7 @@
         <module>glassfish-jersey</module>
         <module>restlet</module>
         <module>resteasy</module>
+        <module>jersey</module>
     </modules>
     <packaging>pom</packaging>
 

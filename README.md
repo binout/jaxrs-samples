@@ -32,7 +32,7 @@ I use Arquillian to implement this use case as an integration test.
 <tr>
     <th>version</th>
     <td>glassfish 3.1.2</td>
-    <td></td>
+    <td>1.17.1</td>
     <td>tomee 1.5.2</td>
     <td>3.0.2.Final</td>
     <td>2.2-M3</td>
